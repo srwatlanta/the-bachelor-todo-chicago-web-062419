@@ -5,7 +5,7 @@ def get_first_name_of_season_winner(data, season)
     if season_number = season
       contestant["status"].each do |placement|
         if placement = "Winner"
-          return contestant ["name"]
+          return contestant["name"]
         end
       end
     end
