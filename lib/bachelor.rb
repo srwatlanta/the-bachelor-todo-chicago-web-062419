@@ -6,6 +6,10 @@ def get_first_name_of_season_winner(data, season)
       contestant["status"].each do |placement|
         if placement = "Winner"
           return contestant ["name"]
+        end
+      end
+    end
+  end
 end
 
 def get_contestant_name(data, occupation)
