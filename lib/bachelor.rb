@@ -1,15 +1,9 @@
 require 'pry'
 
 def get_first_name_of_season_winner(data, season)
-  data.each do |season_number, contestant|
-    if season_number = season
-      contestant["status"].each do |placement|
-        if placement = "Winner"
-          return contestant["name"]
-        end
-      end
-    end
-  end
+  data[season].each do |contestant|
+    if contestant["status"] = "Winner"
+      return contestant["name"].split(' ').first
 end
 
 def get_contestant_name(data, occupation)
